@@ -1,2 +1,2 @@
 import pytest
-pytest.main(['--junitxml=report.xml', '--browser=phantomjs',  'testcases'])
+pytest.main(['--junitxml=report.xml', '--browser=phantomjs',  'testcases/*'])
