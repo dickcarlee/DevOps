@@ -36,7 +36,7 @@ class DevopsDashboardPage:
     ### 服务文档
 
     ## api网关设置
-    menuAPIManage = "//a[contains(.,'API网关配置')]"
+    menuAPIManage = "//a[contains(.,'API配置')]"
     btnAddAPI = '//button[contains(.,"添加API配置")]'
     modalInputApiName = 'input#name'
     modalInputApiGatePath = 'input#gatePath'
