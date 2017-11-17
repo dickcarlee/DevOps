@@ -21,11 +21,10 @@ class DevopsLoginTest(BaseCase):
 
     def test_login_menu_auto_unfold(self):
         self.page.login(self)
-        self.maximize_window()
         self.assert_element(self.page.menuServiceInsertManage, timeout=3)
 
     def test_login_menu_fold(self):
         self.page.login(self)
-        self.set_window_size(600, 800)
+        self.click(self.page.menuServiceMange)
         self.assert_element_not_visible(self.page.menuServiceInsertManage, timeout=3)
 
