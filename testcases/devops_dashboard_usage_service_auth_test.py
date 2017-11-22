@@ -59,10 +59,12 @@ class DevopsDUServiceAuthTest(BaseCase):
         self.click(self.page.menuServiceAuth)
         self.click(self.page.btnAddAuthProject)
         time.sleep(0.5)
+        _now = str(int(time.time()))
         for i in range(3):
             self.find_visible_elements(self.page.inputModalAutoComplete)[i].click()
             self.find_visible_elements(self.page.inputModalAutoComplete)[i].send_keys(Keys.ARROW_UP)
             self.find_visible_elements(self.page.inputModalAutoComplete)[i].send_keys(Keys.ENTER)
+        self.update_text(self.page.textareaAuthApplyReason, 'ApplyReason' + _now)
         self.click(self.page.btnModalAccept)
         time.sleep(0.2)
         self.assert_element_not_visible(self.page.inputModalAutoComplete)

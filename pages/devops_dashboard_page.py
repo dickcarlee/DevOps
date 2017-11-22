@@ -58,6 +58,7 @@ class DevopsDashboardPage:
     tableTrAuthTime0 = '//tbody[@class="ant-table-tbody"]/tr[1]/td[5]'
     tableTrAuthTime1 = '//tbody[@class="ant-table-tbody"]/tr[2]/td[5]'
     divAuthFilterText = 'div.ant-select-selection-selected-value'
+    textareaAuthApplyReason = 'textarea#applyReason'
 
     ## 业务方管理
     menuConsumerManage = '//a[contains(.,"业务方管理")]'

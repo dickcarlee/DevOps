@@ -50,7 +50,7 @@ class DevopsDMApiManageTest(BaseCase):
             assert 'API配置详情' in _detailText
             self.assert_text(_pathTable, self.page.detailPath)
         except:
-            self.assert_text(self.page.iconNoData)
+            self.assert_element(self.page.iconNoData)
 
     # @unittest.skip('pass')
     def test_new_config(self):
